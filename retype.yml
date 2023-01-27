@@ -1,0 +1,13 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: TILT
+  label: v1.0 - Docs
+links:
+  - text: Getting Started
+    link: https://retype.com/guides/getting-started/
+editor:
+  enabled: false
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
