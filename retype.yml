@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: # Add your website address here
+url: https://fortygazelle700.github.io/Tilt-Docs/
 branding:
   title: TILT
   label: v1.0 - Docs
@@ -11,3 +11,23 @@ editor:
   enabled: false
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: retypeapp/action-build@latest
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true
