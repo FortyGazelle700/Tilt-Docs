@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fortygazelle700.github.io/Tilt-Docs/sitemap.xml.gz
